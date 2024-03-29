@@ -76,10 +76,9 @@ I (10197) POSTURE: t:27.68
 I (10197) POSTURE: pitch:-1.66 roll:2.29 
 I (10997) POSTURE: acce_x:-0.36, acce_y:0.17, acce_z:-0.96
 I (10997) POSTURE: gyro_x:-0.67, gyro_y:0.14, gyro_z:0.29
-
+```
 
 Note: If you want to use the mqtt data upload function, please change the ssid and password to the ssid and password of your own AP in the wifi component first.
-
 
 ## Troubleshooting
 
