@@ -1,0 +1,6 @@
+source "D:/APPS/ESP32/IDF/esp-idf/components/bootloader/Kconfig.projbuild"
+source "D:/APPS/ESP32/IDF/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "D:/APPS/ESP32/IDF/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "D:/APPS/ESP32/IDF/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "D:/APPS/ESP32/IDF/esp-idf/components/partition_table/Kconfig.projbuild"
+source "E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/main/Kconfig.projbuild"

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/CMakeFiles/bootloader
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/CMakeFiles/bootloader.rule
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/CMakeFiles/bootloader-complete.rule
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
