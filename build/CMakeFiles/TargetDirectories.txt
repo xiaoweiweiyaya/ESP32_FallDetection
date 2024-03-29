@@ -654,6 +654,13 @@ E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/gps/CMakeFi
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/gps/CMakeFiles/install.dir
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/gps/CMakeFiles/install/local.dir
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/gps/CMakeFiles/install/strip.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/alarm/CMakeFiles/__idf_alarm.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/alarm/CMakeFiles/edit_cache.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/alarm/CMakeFiles/rebuild_cache.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/alarm/CMakeFiles/list_install_components.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/alarm/CMakeFiles/install.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/alarm/CMakeFiles/install/local.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/alarm/CMakeFiles/install/strip.dir
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/oled/CMakeFiles/__idf_oled.dir
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/oled/CMakeFiles/edit_cache.dir
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/oled/CMakeFiles/rebuild_cache.dir
@@ -682,3 +689,10 @@ E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/main/CMakeF
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/main/CMakeFiles/install.dir
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/main/CMakeFiles/install/local.dir
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/main/CMakeFiles/install/strip.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/motor/CMakeFiles/__idf_motor.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/motor/CMakeFiles/edit_cache.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/motor/CMakeFiles/rebuild_cache.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/motor/CMakeFiles/list_install_components.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/motor/CMakeFiles/install.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/motor/CMakeFiles/install/local.dir
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/motor/CMakeFiles/install/strip.dir

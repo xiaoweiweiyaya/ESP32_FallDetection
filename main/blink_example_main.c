@@ -20,6 +20,7 @@
 #include "mqtt.h"
 #include "wifi.h"
 #include "ATGM336H.h"
+#include "alarm.h"
 // static const char *TAG = "fall";
 extern FeatureData feature_data;
 extern PostureData posture_data;
@@ -88,6 +89,7 @@ void main_task(void *pvParameters)
         if(feature_data.PostureState == POSTURE_FALL)
         {
             ESP_LOGI(TAG, "Fall Happening");
+            // syn6288_speak("警报！警报！有人发生跌倒！");
             LedState lds = {250,10,10,true};
             led_task(&lds);
         }

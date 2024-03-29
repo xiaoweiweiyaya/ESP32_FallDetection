@@ -429,6 +429,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/alarm/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/oled/cmake_install.cmake")
 endif()
 
@@ -445,5 +450,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/main/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/motor/cmake_install.cmake")
 endif()
 

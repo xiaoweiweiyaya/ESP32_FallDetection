@@ -66,7 +66,9 @@ $<TARGET_FILE:__idf_wifi_provisioning>
 $<TARGET_FILE:__idf_mpu6050>
 $<TARGET_FILE:__idf_posture>
 $<TARGET_FILE:__idf_gps>
+$<TARGET_FILE:__idf_alarm>
 $<TARGET_FILE:__idf_oled>
 $<TARGET_FILE:__idf_wifi>
 $<TARGET_FILE:__idf_led_strip>
 $<TARGET_FILE:__idf_main>
+$<TARGET_FILE:__idf_motor>

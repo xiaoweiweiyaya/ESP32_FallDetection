@@ -66,7 +66,9 @@ E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/wifi_provis
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/mpu6050/libmpu6050.a
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/posture/libposture.a
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/gps/libgps.a
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/alarm/libalarm.a
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/oled/liboled.a
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/wifi/libwifi.a
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/led_strip/libled_strip.a
 E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/main/libmain.a
+E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build/esp-idf/motor/libmotor.a
