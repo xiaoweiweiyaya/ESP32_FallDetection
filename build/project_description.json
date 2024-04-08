@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "FallDetection",
-    "project_version":    "cba4a18-dirty",
+    "project_version":    "a786116-dirty",
     "project_path":       "E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection",
     "idf_path":           "D:/APPS/ESP32/IDF/esp-idf",
     "build_dir":          "E:/kaiti/CSI/Code/ESP32-S3_FallDetection/FallDetection/build",

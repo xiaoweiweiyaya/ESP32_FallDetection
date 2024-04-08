@@ -46,13 +46,13 @@ void led_task(LedState *pvParameters);//任务函数
 TaskHandle_t OledTask_Handler;
 void oled_task(void *pvParameters);
 
-#define MQTT_TASK_PRIO		1
+#define MQTT_TASK_PRIO		2
 #define MQTT_STK_SIZE 	    4096  
 TaskHandle_t MqttTask_Handler;
 void mqtt_task(void *pvParameters);
 
-#define GPS_TASK_PRIO		1
-#define GPS_STK_SIZE 	    1024  
+#define GPS_TASK_PRIO		2
+#define GPS_STK_SIZE 	    1024*4
 TaskHandle_t GpsTask_Handler;
 void gps_task(void *pvParameters);
 
@@ -171,11 +171,14 @@ void wifi_connect(void)
 void gps_task(void *pvParameters)
 {
     GPS_init();
-    GPS_data gps_data;
     
     while(1)
     {
-        gps_data = gps_get_data();
+        GPS_data gps_data = gps_get_data();
+        if(gps_data.latitude == 0||gps_data.longitude == 0){
+            continue;
+        }
+        ESP_LOGI(TAG, "lat: %f,   lon: %f   \n", gps_data.latitude, gps_data.longitude); 
         sprintf(latitude_str, "%f", gps_data.latitude);
         sprintf(longitude_str, "%f", gps_data.longitude);
         sprintf(speed_str, "%f", gps_data.speed_kmh);
@@ -190,12 +193,10 @@ void gps_task(void *pvParameters)
 }
 void app_main(void)
 {
-    
     xTaskCreate(main_task, "main_task", MAIN_STK_SIZE, NULL, MAIN_TASK_PRIO,&MainTask_Handler);
     xTaskCreate(oled_task, "oled_task", OLED_STK_SIZE, NULL, OLED_TASK_PRIO,&OledTask_Handler);
     xTaskCreate(mqtt_task, "mqtt_task", MQTT_STK_SIZE, NULL, MQTT_TASK_PRIO,&MqttTask_Handler);
-    // xTaskCreate(gps_task, "gps_task", GPS_STK_SIZE, NULL, GPS_TASK_PRIO,&GpsTask_Handler);
+    xTaskCreate(gps_task, "gps_task", GPS_STK_SIZE, NULL, GPS_TASK_PRIO,&GpsTask_Handler);
     // xTaskCreate(led_task, "led_task", LED_STK_SIZE, NULL, LED_TASK_PRIO, &LedTask_Handler);
     // vTaskStartScheduler();
-    
 }

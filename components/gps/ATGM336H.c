@@ -4,6 +4,7 @@
 #include "math.h"	 
 #include <stdlib.h>
 #include "esp_log.h"
+#include "freertos/FreeRTOS.h"
 char *GPS_temp_data = NULL; //gps模块输出数据缓冲区
 static const int GPS_RX_BUF_SIZE = 1024; //GPS模块接收缓冲区大小
 static const char *TAG = "GPS";
@@ -31,7 +32,7 @@ static UTCdate UTCDate_to_BJDate(double UTC_date)
 GPS_data gps_get_data()
 {
     GPS_data gps_data = { 0 };
-    const int rxBytes = uart_read_bytes(UART_GPS, GPS_temp_data, GPS_RX_BUF_SIZE, 1000);
+    const int rxBytes = uart_read_bytes(UART_GPS, GPS_temp_data, GPS_RX_BUF_SIZE, pdMS_TO_TICKS(1000));
     ESP_LOGE(TAG, "rxBytes: %d\n", rxBytes);
     if (rxBytes > 0)
     {
@@ -143,12 +144,16 @@ esp_err_t GPS_init()
         .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
         .source_clk = UART_SCLK_APB,
     };
+    //设置UART参数
     esp_err = uart_param_config(UART_GPS, &uart_config_GPS);
-    // ESP_LOGI(TAG, "uart_param_config: %d\n", esp_err);
+    ESP_LOGI(TAG, "uart_param_config: %d\n", esp_err);
+    //安装UART驱动
     esp_err = uart_driver_install(UART_GPS, GPS_RX_BUF_SIZE * 2, 0, 0, NULL, 0);
-    // ESP_LOGI(TAG, "uart_driver_install: %d\n", esp_err);
+    ESP_LOGI(TAG, "uart_driver_install: %d\n", esp_err);
+    //设置UART引脚
     esp_err = uart_set_pin(UART_GPS, UART_GPS_TXD, UART_GPS_RXD, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
-    // ESP_LOGI(TAG, "uart_set_pin: %d\n", esp_err);
+    ESP_LOGI(TAG, "uart_set_pin: %d\n", esp_err);
+    //分配内存
     GPS_temp_data = (char *)malloc(GPS_RX_BUF_SIZE + 1);
     ESP_LOGI(TAG, "GPS init success!\n");
     return esp_err;

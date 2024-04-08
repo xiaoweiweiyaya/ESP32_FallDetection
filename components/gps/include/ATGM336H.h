@@ -3,9 +3,9 @@
 #include "driver/gpio.h"
 
 //GPS模块串口号、引脚号和相关计算数据
-#define UART_GPS UART_NUM_0
+#define UART_GPS UART_NUM_2
 #define UART_GPS_TXD GPIO_NUM_1
-#define UART_GPS_RXD GPIO_NUM_3
+#define UART_GPS_RXD GPIO_NUM_2
 
 typedef struct GPS_data_{
 	double latitude;
